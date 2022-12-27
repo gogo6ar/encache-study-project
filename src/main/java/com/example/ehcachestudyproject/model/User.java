@@ -31,4 +31,8 @@ public class User {
 
   @Column(name = "password")
   private String password;
+
+  public Optional<String> getPassword() {
+    return Optional.empty();
+  }
 }

@@ -11,7 +11,8 @@ public class UserToDTOMapper implements Mapper<User, UserDTO>{
     return UserDTO.builder()
             .id(entity.getId())
             .name(entity.getName())
-            .name(entity.getName())
+//            .name(entity.getName())
+            .password(entity.getPassword().orElse(""))
             .password(entity.getPassword().orElse(""))
             .build();
   }
